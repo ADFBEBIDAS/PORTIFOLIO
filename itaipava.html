@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content= "width=device-width, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <title>Portifólio</title>
+</head>
+
+<body>
+
+  <header class="produto itaipava">
+    <div>
+      <img src="./images/itaipava/logo-itaipava-braga.webp" loading="lazy" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="s-produto container">
+      <a href="index.html"><img src="./images/bx-arrow-back.svg" alt=""></a>
+      <div class="img-produto-single">
+        <img id="imgProduto" src="./images/itaipava/2.webp" loading="lazy" alt="">
+      </div>
+      <div class="description">
+        <label for="codProduto">
+          <b>Cód: </b><span id="codProduto">92133</span>
+        </label>
+        <label for="nomeProduto">
+          <b>Nome: </b>
+          <span id="nomeProduto">
+            Itaipava 100% Malte 600ml
+          </span>
+        </label>
+        <label for="infoProduto">
+          <b>Observações: </b>
+          <span id="infoProduto">
+            Produto vendido em pack com 24 unidades
+          </span>
+        </label>
+        <!-- <label for="descProduto">
+          <b>Descrição: </b>
+          <span id="descProduto">
+            Produzida com ingredientes 100% selecionados, água 100% cristalina e respeitando o tempo certo, a Itaipava é uma cerveja clara, leve, saborosa e refrescante. A família Itaipava é composta por: Pilsen, 100% Malte, Malzbier, Zero Álcool, além do Chopp (claro e escuro) e Black.
+          </span>
+        </label> -->
+        <span>
+
+        </span>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- <div class="swiper-slide" onclick="selectProductItaipava(0)"><img src="./images/itaipava/0.webp" loading="lazy"></div> -->
+          <!-- <div class="swiper-slide" onclick="selectProductItaipava(1)"><img src="./images/itaipava/1.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductItaipava(2) "><img src="./images/itaipava/2.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(3)"><img src="./images/itaipava/3.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(4) "><img src="./images/itaipava/4.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(5)"><img src="./images/itaipava/5.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(6)"><img src="./images/itaipava/6.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(7)"><img src="./images/itaipava/7.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(8)"><img src="./images/itaipava/8.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(9)"><img src="./images/itaipava/9.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(10)"><img src="./images/itaipava/10.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(11)"><img src="./images/itaipava/11.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(12)"><img src="./images/itaipava/12.webp" loading="lazy"></div>
+          <!-- <div class="swiper-slide" onclick="selectProductItaipava(13)"><img src="./images/itaipava/13.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductItaipava(14)"><img src="./images/itaipava/14.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(15) "><img src="./images/itaipava/15.webp" loading="lazy"></div>
+          <!-- <div class="swiper-slide" onclick="selectProductItaipava(16)"><img src="./images/itaipava/16.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductItaipava(17)"><img src="./images/itaipava/17.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductItaipava(18) "><img src="./images/itaipava/18.webp" loading="lazy"></div>
+          <!-- <div class="swiper-slide" onclick="selectProductItaipava(19) "><img src="./images/itaipava/19.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductItaipava(20)"><img src="./images/itaipava/20.webp" loading="lazy"></div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="produto itaipava">
+    <div id="popup" class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <span class="popup-text">Quer comprar conosto?<br> Clique aqui.</span>
+      <div class="balloon-arrow"></div> <!-- Seta do balão -->
+    </div>
+
+    <a href="https://wa.me/message/USSKYO2RGGWGL1" target="_blank" rel="" class="iconWhats iconWhatsMobile popup-arrow"><img src="images/iconWhats.svg" alt=""></a>
+    <b>© Todos os direitos reservados</b>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 3.5,
+    loop: false,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 3.5,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+      1000: {
+        slidesPerView: 5.5,
+      }
+    }
+
+  });
+</script>
+
+</html>

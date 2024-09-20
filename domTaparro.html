@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Portifólio</title>
+</head>
+
+<body>
+
+  <header class="produto domTaparro">
+    <div>
+      <img src="./images/domTaparro/logoCachaca.webp" loading="lazy" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="s-produto container">
+      <a href="index.html" class="domTaparro"><img src="./images/back-arrow-welten.svg" alt=""></a>
+      <div class="img-produto-single">
+        <img id="imgProduto" src="./images/domTaparro/0.webp" loading="lazy" alt="">
+      </div>
+      <div class="description">
+        <label for="codProduto">
+          <b>Cód: </b><span id="codProduto">15632</span>
+        </label>
+        <label for="nomeProduto">
+          <b>Nome: </b>
+          <span id="nomeProduto">
+            Cabaré Amburana 700ml
+          </span>
+        </label>
+        <label for="infoProduto">
+          <b>Observações: </b>
+          <span id="infoProduto">
+            Produto vendido em pack com 6 unidades
+          </span>
+        </label>
+        <!-- <label for="descProduto">
+          <b>Descrição: </b>
+          <span id="descProduto">
+            
+          </span>
+        </label> -->
+        <span>
+
+        </span>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" onclick="selectProductdomTparro(0)"><img src="./images/domTaparro/0.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(1)"><img src="./images/domTaparro/1.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(2) "><img src="./images/domTaparro/2.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(3)"><img src="./images/domTaparro/3.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(5)"><img src="./images/domTaparro/5.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(6)"><img src="./images/domTaparro/6.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(7)"><img src="./images/domTaparro/7.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(4)"><img src="./images/domTaparro/4.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(8)"><img src="./images/domTaparro/8.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductdomTparro(9)"><img src="./images/domTaparro/9.webp" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="produto domTaparro">
+    <div id="popup" class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <span class="popup-text">Quer comprar conosto?<br> Clique aqui.</span>
+      <div class="balloon-arrow"></div> <!-- Seta do balão -->
+    </div>
+
+    <a href="https://wa.me/message/USSKYO2RGGWGL1" target="_blank" rel="" class="iconWhats iconWhatsMobile popup-arrow"><img src="images/iconWhats.svg" alt=""></a>
+    <b>© Todos os direitos reservados</b>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+
+    slidesPerView: 3.5,
+    loop: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 3.5,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+      1000: {
+        slidesPerView: 5.5,
+      }
+    }
+
+  });
+</script>
+
+</html>

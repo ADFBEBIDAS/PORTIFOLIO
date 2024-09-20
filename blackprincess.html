@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content= "width=device-width, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <title>Portifólio</title>
+</head>
+
+<body>
+
+  <header class="produto blackPrincess">
+    <div>
+      <img src="./images/blackprinces/logo.webp" loading="lazy" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="s-produto container">
+      <a href="index.html"><img src="./images/bx-arrow-back-black.svg" alt=""></a>
+      <div class="img-produto-single">
+        <img id="imgProduto" src="./images/blackprinces/0.webp" loading="lazy" alt="">
+      </div>
+      <div class="description">
+        <label for="codProduto">
+          <b>Cód: </b><span id="codProduto">16636</span>
+        </label>
+        <label for="nomeProduto">
+          <b>Nome: </b>
+          <span id="nomeProduto">
+            Black Princess Gold 330 ml
+          </span>
+        </label>
+        <label for="infoProduto">
+          <b>Observações: </b>
+          <span id="infoProduto">
+            Produto vendido em pack com 12 unidades
+          </span>
+        </label>
+        <!-- <label for="descProduto">
+          <b>Descrição: </b>
+          <span id="descProduto">
+            Os ingredientes selecionados de Black Princess fazem ela ser uma cerveja onde a tradição do clássico e a modernidade do amanhã se encontram. As águas das montanhas combinadas com o mais puro malte e lúpulo lhe conferem sabor nobre e marcante, encantando os paladares mais exigentes desde 1882.
+          </span>
+        </label> -->
+        <span>
+
+        </span>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(0)"><img src="./images/blackprinces/0.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(1)"><img src="./images/blackprinces/1.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(2) "><img src="./images/blackprinces/2.webp" loading="lazy"></div>
+          <!-- <div class="swiper-slide" onclick="selectProductIBlackPrincess(3)"><img src="./images/blackprinces/3.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(4) "><img src="./images/blackprinces/4.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(5)"><img src="./images/blackprinces/5.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(6)"><img src="./images/blackprinces/6.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(7)"><img src="./images/blackprinces/7.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductIBlackPrincess(8)"><img src="./images/blackprinces/8.webp" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="produto blackPrincess">
+    <div id="popup" class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <span class="popup-text">Quer comprar conosto?<br> Clique aqui.</span>
+      <div class="balloon-arrow"></div> <!-- Seta do balão -->
+    </div>
+
+    <a href="https://wa.me/message/USSKYO2RGGWGL1" target="_blank" rel="" class="iconWhats iconWhatsMobile popup-arrow"><img src="images/iconWhats.svg" alt=""></a>
+    <b>© Todos os direitos reservados</b>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 3.5,
+    loop: false,
+    
+    breakpoints: {
+      320: {
+        slidesPerView: 3.5,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+      1000: {
+        slidesPerView: 5.5,
+      }
+    }
+
+  });
+</script>
+
+</html>

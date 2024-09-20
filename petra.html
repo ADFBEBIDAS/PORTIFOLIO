@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content= "width=device-width, user-scalable=no">  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <title>Portifólio</title>
+</head>
+
+<body>
+
+  <header class="produto petra">
+    <div>
+      <img src="./images/petra/logo.webp" loading="lazy" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="s-produto container">
+      <a href="index.html" class="petra"><img src="./images/back-arrow-petra.svg" alt=""></a>
+      <div class="img-produto-single">
+        <img id="imgProduto" src="./images/petra/3.webp" loading="lazy" alt="">
+      </div>
+      <div class="description">
+        <label for="codProduto">
+          <b>Cód: </b><span id="codProduto">15142</span>
+        </label>
+        <label for="nomeProduto">
+          <b>Nome: </b>
+          <span id="nomeProduto">
+            Petra Puro Malte Origem 269ml
+          </span>
+        </label>
+        <label for="infoProduto">
+          <b>Observações: </b>
+          <span id="infoProduto">
+            Produto vendido em pack com 12 unidades
+          </span>
+        </label>
+        <!-- <label for="descProduto">
+          <b>Descrição: </b>
+          <span id="descProduto">
+            A Petra conta com uma linha de cervejas especiais diferenciadas, com estilos que atendem os paladares mais exigentes. E, esta marca que sempre respeitou a tradição cervejeira, ampliou o portfólio: Petra Origem, a Puro Malte de composição equilibrada e baixo amargor.
+          </span>
+        </label> -->
+        <span>
+
+        </span>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- <div class="swiper-slide" onclick="selectProductPetra(0)"><img src="./images/petra/0.webp" loading="lazy"></div> -->
+          <!-- <div class="swiper-slide" onclick="selectProductPetra(1)"><img src="./images/petra/1.webp" loading="lazy"></div> -->
+          <!-- <div class="swiper-slide" onclick="selectProductPetra(2) "><img src="./images/petra/2.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductPetra(3)"><img src="./images/petra/3.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductPetra(4)"><img src="./images/petra/4.webp" loading="lazy"></div>
+          <!-- <div class="swiper-slide" onclick="selectProductPetra(5)"><img src="./images/petra/5.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProductPetra(6)"><img src="./images/petra/6.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductPetra(7)"><img src="./images/petra/7.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductPetra(8)"><img src="./images/petra/8.webp" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="produto petra">
+    <div id="popup" class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <span class="popup-text">Quer comprar conosto?<br> Clique aqui.</span>
+      <div class="balloon-arrow"></div> <!-- Seta do balão -->
+    </div>
+
+    <a href="https://wa.me/message/USSKYO2RGGWGL1" target="_blank" rel="" class="iconWhats iconWhatsMobile popup-arrow"><img src="images/iconWhats.svg" alt=""></a>
+    <b>© Todos os direitos reservados</b>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 2.2,
+    loop: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 3.7,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+      1000: {
+        slidesPerView: 5.5,
+      }
+    }
+
+  });
+</script>
+
+</html>

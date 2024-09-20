@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: sans-serif;
+
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+:root {
+  --itaipava-red-color: #ae0f0b;
+  --itaipava-logo-red-color: #7d0000;
+  --black-princess-color: #98731b;
+  --crystal-color: #dac94f;
+  --cabare-color: #c1bdbc;
+  --petra-color: #000000de;
+  --cacildis-color: #95f5ea;
+  --weltenburger-color: #c6c6c6;
+  --domTaparro-color: #8b9be0;
+  --purissima-color: #2942a7;
+  --it-color: #015b89;
+  --gray-color: #706e6f;
+  --hover-color: #787878: --white-color: #ffffff;
+  --margin: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+  /* height: 100vh; */
+}
+
+body {
+  position: relative;
+  min-width: 345px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 2rem;
+  width: 40rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+.modal-content h2 {
+  font-size: 2.4rem;
+  margin: var(--margin);
+  color: var(--gray-color);
+}
+
+/* Estilos para os botões */
+.modal-content button {
+  margin: 0.5rem;
+  padding: 10px 20px;
+  background-color: var(--itaipava-red-color);
+  color: white;
+}
+
+header.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  border-bottom: 0.2rem solid var(--itaipava-red-color);
+}
+
+header div img {
+  width: 15rem;
+  margin-top: var(--margin);
+}
+
+header div h2 {
+  font-size: 4.8rem;
+  margin-bottom: var(--margin);
+  color: var(--gray-color);
+}
+
+main .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--itaipava-red-color);
+  margin-top: var(--margin);
+  margin-left: -4rem;
+}
+
+main .title div h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-right: -4rem;
+
+}
+
+main .title div:last-child {
+  font-size: 6rem;
+  margin-right: -4rem;
+  transform: rotate(270deg);
+  font-weight: bold;
+}
+
+main h2 {
+  margin: var(--margin);
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--gray-color);
+}
+
+main h3 {
+  margin: var(--margin);
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--gray-color);
+}
+
+
+.s-produtos {
+  display: flex;
+  margin: 0 auto 4rem auto;
+  padding: 0 2%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--margin);
+}
+
+.s-produtos a img {
+  max-width: 12rem;
+  transition: .4s all;
+}
+
+
+.s-produtos a img:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.s-produto .petra {
+  position: relative;
+  top: -55px;
+}
+
+.s-produtos a img.domTaparro {
+  max-width: 12rem;
+}
+
+.s-produtos a img.vodka {
+  max-width: 12rem;
+}
+
+.s-produtos a img.petraTonica {
+  max-width: 11rem;
+}
+
+.s-produtos a img.petraTonica {
+  max-width: 11rem;
+}
+
+.s-produtos a img.vodka {
+  max-width: 11rem;
+}
+
+/*ITAIPAVA*/
+header.produto {
+  display: flex;
+  justify-content: center;
+}
+
+header.produto.itaipava {
+  display: flex;
+  justify-content: center;
+  background-color: var(--itaipava-logo-red-color);
+}
+
+header.produto.blackPrincess {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-princess-color);
+}
+
+header.produto.cabare {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cabare-color);
+}
+
+header.produto.petra {
+  display: flex;
+  justify-content: center;
+  background-color: var(--petra-color);
+}
+
+header.produto.crystal {
+  display: flex;
+  justify-content: center;
+  background-color: var(--crystal-color);
+}
+
+header.produto.cacildis {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cacildis-color);
+}
+
+header.produto.it {
+  display: flex;
+  justify-content: center;
+  background-color: var(--it-color);
+}
+
+header.produto.weltenburger {
+  display: flex;
+  justify-content: center;
+  background-color: var(--weltenburger-color);
+}
+
+header.produto.domTaparro {
+  display: flex;
+  justify-content: center;
+  background-color: var(--domTaparro-color);
+}
+
+header.produto.purissima {
+  display: flex;
+  justify-content: center;
+}
+
+header.produto div img {
+  width: 100%;
+  max-width: 12rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+header.produto.vodka div img {
+  max-width: 8rem;
+}
+
+header.produto.petra div img {
+  max-width: 9rem;
+}
+
+header.produto.petraTonica div img {
+  max-width: 9rem;
+}
+
+.s-produto {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.s-produto a {
+  position: fixed;
+  top: 2rem;
+}
+
+.s-produto a img {
+  width: 4rem;
+}
+
+.s-produto .img-produto-single img {
+  max-width: 100%;
+  margin: 1rem auto 0 auto;
+  height: 35rem;
+}
+
+.s-produto .description {
+  margin: 2rem 0 2rem 0;
+}
+
+.s-produto .description label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.s-produto .description b {
+  font-size: 1.8rem
+}
+
+.s-produto .description span {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+section.container .swiper {
+  position: fixed;
+  bottom: 5rem;
+}
+
+.swiper:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.swiper:active {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+
+.swiper-wrapper .swiper-slide {
+  height: 10rem;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.swiper-wrapper .swiper-slide:active {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.swiper-wrapper .swiper-slide:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+
+.swiper-wrapper .swiper-slide img {
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.swiper-wrapper .swiper-slide img:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.swiper-wrapper .swiper-slide img:active {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  background-color: var(--itaipava-red-color);
+  text-align: center;
+  padding: 1rem;
+  color: #ffffff;
+  margin-top: 61px;
+}
+
+footer div {
+  font-size: 2.4rem;
+  width: 32px;
+}
+
+footer div img {
+  display: inline;
+}
+
+footer.produto {
+  position: fixed;
+}
+
+footer.itaipava {
+  background-color: var(--itaipava-red-color);
+  color: #fff;
+}
+
+footer.blackPrincess {
+  background-color: var(--black-princess-color);
+}
+
+footer.cabare {
+  background-color: var(--cabare-color);
+  color: var(--itaipava-red-color);
+}
+
+footer.petra {
+  background-color: var(--petra-color);
+  color: var(--gray-color);
+}
+
+footer.crystal {
+  background-color: var(--crystal-color);
+  color: var(--itaipava-logo-red-color);
+}
+
+footer.cacildis {
+  background-color: var(--cacildis-color);
+  color: var(--petra-color);
+}
+
+footer.it {
+  background-color: var(--it-color);
+  color: #4e99ea;
+}
+
+footer.weltenburger {
+  background-color: var(--weltenburger-color);
+  color: #023e7c;
+}
+
+footer.domTaparro {
+  background-color: var(--domTaparro-color);
+  color: #000000;
+}
+
+footer.purissima {
+  background-color: var(--purissima-color);
+  color: #000000;
+}
+
+footer.vodka {
+  background-color: var(--petra-color);
+  color: #fff;
+}
+
+footer.petraTonica {
+  background-color: var(--it-color);
+  color: #fff;
+}
+
+.iconWhatsMobile img {
+  width: 64px;
+  position: absolute;
+  right: 10px;
+  bottom: 170px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  background-color: #00ff4c;
+}
+
+.iconWhatsMobile img:hover {
+  transform: scale(1.2);
+  transition: 0.4s all;
+}
+
+/* Estilos do popup */
+.popup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  bottom: 260px;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  color: var(--itaipava-logo-red-color);
+  font-weight: bold;
+  background-color: rgb(0, 62, 19);
+  padding: 2px;
+  /* box-shadow: 0 5px 15px rgba(0, 62, 19, 1); */
+  z-index: 1000;
+  opacity: 0;
+  /* Começa invisível */
+  visibility: hidden;
+  /* Não está visível inicialmente */
+  border-radius: 10px;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+  /* Efeito de transição de opacidade */
+
+}
+
+.popup:hover {
+  cursor: pointer;
+}
+
+/* Estilos do botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 38px;
+  cursor: pointer;
+  z-index: 9999999999;
+  color: #fff;
+
+}
+
+/* Estilos do texto do popup */
+.popup-text {
+  display: block;
+  margin: 20px 0;
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgb(0, 62, 19);
+}
+
+/* Quando o popup estiver visível */
+#popup.show {
+  opacity: 1;
+  /* Visível */
+  visibility: visible;
+  /* Torna visível */
+  transition: opacity 0.5s ease;
+  /* Remove delay da visibilidade */
+}
+
+
+.balloon-arrow {
+  position: absolute;
+  bottom: -20px;
+  /* Ajuste para posicionar a seta no balão */
+  left: 92%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #003e13;
+  z-index: -1;
+
+}
+
+@media (max-width: 492px) {
+
+  footer {
+    position: fixed;
+  }
+
+  /* .iconWhatsMobile img{
+    bottom: 90px;
+  }
+
+  .popup {
+    bottom: 165px;
+  } */
+
+}
+
+
+
+
+@media (max-width: 900px) {
+
+  .iconWhatsMobile img {
+    width: 48px;
+    /* bottom: 130px; */
+  }
+
+  .popup-text {
+    font-size: 22px;
+  }
+
+  .popup {
+    max-width: 300px;
+    bottom: 250px;
+  }
+
+  .balloon-arrow {
+    left: 92%;
+  }
+
+  main .title div h1 {
+    font-size: 5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .s-produtos a img {
+    max-width: 15rem;
+  }
+
+  /*ITAIPAVA*/
+  .d-produto .d-img-produto {
+    max-width: 30rem;
+  }
+
+  .d-produto .description {
+    max-width: 35rem;
+  }
+
+
+
+  /* .iconWhatsMobile img{
+    bottom: 130px;
+  } */
+  /* 
+  .popup{
+    max-width: 300px;
+    bottom: 200px;
+  } */
+
+  main .title div h1 {
+    font-size: 4.5rem;
+
+  }
+
+  /* footer{
+    position: fixed;
+  } */
+
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  main .title div h1 {
+    font-size: 4rem;
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+
+  /* .iconWhatsMobile img{
+    bottom: 130px;
+  } */
+
+  footer {
+    position: relative;
+  }
+
+}
+
+@media (min-height: 1900px) {
+
+  /* .iconWhatsMobile img{
+    bottom: 130px;
+  } */
+
+  footer {
+    position: fixed;
+  }
+
+}
+
+
+@media (pointer: coarse) {
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus,
+  div:focus {
+    outline: 2px solid transparent; /* Um contorno transparente que não afeta a visibilidade */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0);
+  }
+}
+
+img:focus,
+p:focus,
+span:focus,
+a:focus,
+div:focus {
+  outline: none !important; 
+}
+
+.swiper-slide img {
+  user-select: none !important;
+  /* Remove a seleção de imagem */
+  -webkit-user-select: none !important;
+  /* Para navegadores baseados em WebKit */
+  -moz-user-select: none !important;
+  /* Para Firefox */
+  -ms-user-select: none !important;
+  /* Para Internet Explorer/Edge */
+  border: none !important;
+  /* Remove qualquer borda */
+  outline: none !important;
+  /* Remove qualquer contorno de foco */
+}
+
+.swiper-slide {
+  user-select: none !important;
+  /* Remove a seleção de imagem */
+  -webkit-user-select: none !important;
+  /* Para navegadores baseados em WebKit */
+  -moz-user-select: none !important;
+  /* Para Firefox */
+  -ms-user-select: none !important;
+  /* Para Internet Explorer/Edge */
+  border: none !important;
+  /* Remove qualquer borda */
+  outline: none !important;
+  /* Remove qualquer contorno de foco */
+}
+
+.swiper {
+  user-select: none !important;
+  /* Remove a seleção de imagem */
+  -webkit-user-select: none !important;
+  /* Para navegadores baseados em WebKit */
+  -moz-user-select: none !important;
+  /* Para Firefox */
+  -ms-user-select: none !important;
+  /* Para Internet Explorer/Edge */
+  border: none !important;
+  /* Remove qualquer borda */
+  outline: none !important;
+  /* Remove qualquer contorno de foco */
+}
+
+.swiper-wrapper {
+  user-select: none !important;
+  /* Remove a seleção de imagem */
+  -webkit-user-select: none !important;
+  /* Para navegadores baseados em WebKit */
+  -moz-user-select: none !important;
+  /* Para Firefox */
+  -ms-user-select: none !important;
+  /* Para Internet Explorer/Edge */
+  border: none !important;
+  /* Remove qualquer borda */
+  outline: none !important;
+  /* Remove qualquer contorno de foco */
+}

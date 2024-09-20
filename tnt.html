@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content= "width=device-width, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <title>Portifólio</title>
+</head>
+
+<body>
+
+  <header class="produto tnt">
+    <div>
+      <img src="./images/tnt/logo.webp" loading="lazy" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="s-produto container">
+      <a href="index.html"><img src="./images/back-arrow-cabare.svg" alt=""></a>
+      <div class="img-produto-single">
+        <img id="imgProduto" src="./images/tnt/4.webp" loading="lazy" alt="">
+      </div>
+      <div class="description">
+        <label for="codProduto">
+          <b>Cód: </b><span id="codProduto">16299</span>
+        </label>
+        <label for="nomeProduto">
+          <b>Nome: </b>
+          <span id="nomeProduto">
+            Focus 473ml
+          </span>
+        </label>
+        <label for="infoProduto">
+          <b>Observações: </b>
+          <span id="infoProduto">
+            Produto vendido em pack com 4 unidades
+          </span>
+        </label>
+        <!-- <label for="descProduto">
+          <b>Descrição: </b>
+          <span id="descProduto">
+            TNT Energy Drink é a dose diária de #PodeVir que a galera precisa. TNT é uma marca que espalha resistência por aí. Lançado em 2009, a marca oferece 6 opções de sabores: original, tangerina, zero, açaí com guaraná, maçã-verde e focus.
+          </span>
+        </label> -->
+        <span>
+
+        </span>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- <div class="swiper-slide" onclick="selectProducTnt(0)"><img src="./images/tnt/0.webp" loading="lazy"></div> -->
+          <!-- <div class="swiper-slide" onclick="selectProducTnt(1)"><img src="./images/tnt/1.webp" loading="lazy"></div> -->
+          <!-- <div class="swiper-slide" onclick="selectProducTnt(2) "><img src="./images/tnt/2.webp" loading="lazy"></div> -->
+          <!-- <div class="swiper-slide" onclick="selectProducTnt(3)"><img src="./images/tnt/3.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProducTnt(4) "><img src="./images/tnt/4.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(6)"><img src="./images/tnt/6.webp" loading="lazy"></div>
+          <!-- <div class="swiper-slide" onclick="selectProducTnt(8)"><img src="./images/tnt/8.webp" loading="lazy"></div> -->
+          <div class="swiper-slide" onclick="selectProducTnt(9)"><img src="./images/tnt/9.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(10)"><img src="./images/tnt/10.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(11)"><img src="./images/tnt/11.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(12)"><img src="./images/tnt/12.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(17)"><img src="./images/tnt/17.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(18) "><img src="./images/tnt/18.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(7)"><img src="./images/tnt/7.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(5)"><img src="./images/tnt/5.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(13)"><img src="./images/tnt/13.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(14)"><img src="./images/tnt/14.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(15) "><img src="./images/tnt/15.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProducTnt(16)"><img src="./images/tnt/16.webp" loading="lazy"></div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="produto tnt">
+    <div id="popup" class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <span class="popup-text">Quer comprar conosto?<br> Clique aqui.</span>
+      <div class="balloon-arrow"></div> <!-- Seta do balão -->
+    </div>
+
+    <a href="https://wa.me/message/USSKYO2RGGWGL1" target="_blank" rel="" class="iconWhats iconWhatsMobile popup-arrow"><img src="images/iconWhats.svg" alt=""></a>
+    <b>© Todos os direitos reservados</b>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 3.5,
+    loop: false,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 3.7,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+      1000: {
+        slidesPerView: 5.5,
+      }
+    }
+
+  });
+</script>
+
+</html>

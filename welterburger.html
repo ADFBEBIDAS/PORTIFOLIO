@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <title>Portifólio</title>
+</head>
+
+<body>
+
+  <header class="produto weltenburger">
+    <div>
+      <img src="./images/weltenburger/logo.webp" loading="lazy" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="s-produto container">
+      <a href="index.html"><img src="./images/back-arrow-welten.svg" alt=""></a>
+      <div class="img-produto-single">
+        <img id="imgProduto" src="./images/weltenburger/0.webp" loading="lazy" alt="">
+      </div>
+      <div class="description">
+        <label for="codProduto">
+          <b>Cód: </b><span id="codProduto">1104</span>
+        </label>
+        <label for="nomeProduto">
+          <b>Nome: </b>
+          <span id="nomeProduto">
+            Anno 1050 500ml
+          </span>
+        </label>
+        <label for="infoProduto">
+          <b>Observações: </b>
+          <span id="infoProduto">
+            Produto vendido em pack com 6 unidades
+          </span>
+        </label>
+        <!-- <label for="descProduto">
+          <b>Descrição: </b>
+          <span id="descProduto">
+            É a cerveja de mosteiro mais antiga do mundo. Sua qualidade superior e sabor único são mantidos há mais de 960 anos, seguindo a mesma receita tradicional criada por monges medievais na Alemanha. Fora da Alemanha, o Grupo Petrópolis é empresa a produzir a marca. A família Weltenburger é composta por Barock Dunkel, Anno 1050, Urtyp Hell e Hefe-Weissbier.
+          </span>
+        </label> -->
+        <span>
+
+        </span>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" onclick="selectProductWeltenBurger(0)"><img src="./images/weltenburger/0.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductWeltenBurger(1)"><img src="./images/weltenburger/1.webp" loading="lazy"></div>
+          <div class="swiper-slide" onclick="selectProductWeltenBurger(2) "><img src="./images/weltenburger/2.webp" loading="lazy">
+          </div>
+          <div class="swiper-slide" onclick="selectProductWeltenBurger(3)"><img src="./images/weltenburger/3.webp" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="produto weltenburger">
+    <div id="popup" class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <span class="popup-text">Quer comprar conosto?<br> Clique aqui.</span>
+      <div class="balloon-arrow"></div> <!-- Seta do balão -->
+    </div>
+
+    <a href="https://wa.me/5592994852145?text=Ol%C3%A1,%20tenho%20interesse%20em%20comprar%20com%20voc%C3%AAs,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+      target="_blank" rel="" class="iconWhats iconWhatsMobile popup-arrow"><img src="images/iconWhats.svg" alt=""></a>
+    <b>© Todos os direitos reservados</b>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+
+    slidesPerView: 2.2,
+    loop: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 3.7,
+      },
+      768: {
+        slidesPerView: 5.2,
+      },
+      1000: {
+        slidesPerView: 5.5,
+      }
+    }
+
+  });
+</script>
+
+</html>
